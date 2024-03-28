@@ -6,6 +6,7 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import { ReactNode } from "react";
+import  "./../app/globals.css"
 
 type Props = {};
 type Datatype = {
@@ -69,7 +70,7 @@ const Sidebar = (props: Props) => {
       </div>
    );
    return (
-      <div className=" w-60 h-screentransition-transform -translate-x-full sm:translate-x-0 ">
+      <div className=" w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 ">
          <div className=" text-white h-[180px]  flex flex-col justify-center text-center bg-[#3D5654]  rounded-tr-[30px] ">
             <div className="border rounded-full border-[#C99C37] mx-auto w-fit p-1">
                <Image
@@ -90,7 +91,7 @@ const Sidebar = (props: Props) => {
                {data?.map((item, index) => (
                   <div
                      key={index}
-                     className="flex  items-center gap-2 text-white hover:text-[#425C5A] hover:bg-[#E1ECEB] rounded- font-light pl-4  rounded-tl-lg rounded-bl-lg text-sm "
+                     className=" flex  items-center gap-2 text-white hover:text-[#425C5A] hover:bg-[#E1ECEB]  font-light pl-4  rounded-tl-lg rounded-bl-lg text-sm "
                   >
                      {item.icon} {item.name}
                   </div>
@@ -101,7 +102,7 @@ const Sidebar = (props: Props) => {
                <p className="text-[#C99C37] text-[10px]">ACTIVE USERS</p>
                <div className="mt-4">{icon}</div>
                <Image
-                  className="object-cover mt-10 "
+                  className="object-cover mt-12 "
                   src="/map1.png"
                   alt="man"
                   width={180}
